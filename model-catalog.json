@@ -1,7 +1,27 @@
 {
   "version": 1,
-  "last_updated": "2025-12-27",
+  "last_updated": "2025-12-29",
   "models": [
+    {
+      "id": "phi-3.5-mini-instruct-q4-k-m",
+      "name": "Phi-3.5 Mini Instruct (Q4_K_M)",
+      "publisher": "Microsoft",
+      "parameters": "3.8B",
+      "license": "MIT (check host repo for exact)",
+      "gated": false,
+      "section": "instant",
+      "starter_recommended": true,
+      "tasks": ["general", "chat"],
+      "download_url": "https://huggingface.co/bartowski/Phi-3.5-mini-instruct-GGUF/resolve/main/Phi-3.5-mini-instruct-Q4_K_M.gguf",
+      "host_url": "https://huggingface.co/bartowski/Phi-3.5-mini-instruct-GGUF",
+      "file_name": "Phi-3.5-mini-instruct-Q4_K_M.gguf",
+      "size_bytes": null,
+      "release_date": "2024-??-??",
+      "min_ram_gb": 8,
+      "min_vram_gb": 0,
+      "requires_gpu": false,
+      "description": "V1 starter. Fast, lightweight, and works on almost any computer. Best first download."
+    },
     {
       "id": "llama-3.2-3b-instruct-q4-k-m",
       "name": "Llama 3.2 3B Instruct (Q4_K_M)",
@@ -9,6 +29,8 @@
       "parameters": "3B",
       "license": "Meta Llama 3.2 Community License",
       "gated": false,
+      "section": "instant",
+      "starter_recommended": false,
       "tasks": ["general", "chat"],
       "download_url": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF/resolve/main/Llama-3.2-3B-Instruct-Q4_K_M.gguf",
       "host_url": "https://huggingface.co/bartowski/Llama-3.2-3B-Instruct-GGUF",
@@ -21,12 +43,54 @@
       "description": "Lightweight instruction model for general chat and document lookup."
     },
     {
+      "id": "qwen-2.5-7b-instruct-q4-k-m",
+      "name": "Qwen 2.5 7B Instruct (Q4_K_M)",
+      "publisher": "Alibaba",
+      "parameters": "7B",
+      "license": "Apache-2.0",
+      "gated": false,
+      "section": "instant",
+      "starter_recommended": false,
+      "tasks": ["general", "chat", "reasoning"],
+      "download_url": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF/resolve/main/Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+      "host_url": "https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF",
+      "file_name": "Qwen2.5-7B-Instruct-Q4_K_M.gguf",
+      "size_bytes": null,
+      "release_date": "2024-??-??",
+      "min_ram_gb": 16,
+      "min_vram_gb": 0,
+      "requires_gpu": false,
+      "description": "Great all-around assistant. Strong instruction-following and a solid daily driver."
+    },
+    {
+      "id": "mistral-7b-instruct-v0.3-q4-k-m",
+      "name": "Mistral 7B Instruct v0.3 (Q4_K_M)",
+      "publisher": "Mistral AI",
+      "parameters": "7B",
+      "license": "Apache-2.0",
+      "gated": false,
+      "section": "instant",
+      "starter_recommended": false,
+      "tasks": ["general", "chat", "tools"],
+      "download_url": "https://huggingface.co/bartowski/Mistral-7B-Instruct-v0.3-GGUF/resolve/main/Mistral-7B-Instruct-v0.3-Q4_K_M.gguf",
+      "host_url": "https://huggingface.co/bartowski/Mistral-7B-Instruct-v0.3-GGUF",
+      "file_name": "Mistral-7B-Instruct-v0.3-Q4_K_M.gguf",
+      "size_bytes": null,
+      "release_date": "2024-??-??",
+      "min_ram_gb": 16,
+      "min_vram_gb": 0,
+      "requires_gpu": false,
+      "description": "Reliable and widely supported. Great balance of quality and speed."
+    },
+    {
       "id": "qwen-2.5-32b-instruct-q4-k-m",
       "name": "Qwen 2.5 32B Instruct (Q4_K_M)",
       "publisher": "Alibaba",
       "parameters": "32B",
       "license": "Apache-2.0",
-      "gated": false,
+      "gated": true,
+      "section": "advanced",
+      "starter_recommended": false,
       "tasks": ["general", "coding", "long-context"],
       "download_url": "https://huggingface.co/bartowski/Qwen2.5-32B-Instruct-GGUF/resolve/main/Qwen2.5-32B-Instruct-Q4_K_M.gguf",
       "host_url": "https://huggingface.co/bartowski/Qwen2.5-32B-Instruct-GGUF",
@@ -36,7 +100,7 @@
       "min_ram_gb": 32,
       "min_vram_gb": 16,
       "requires_gpu": true,
-      "description": "High-capacity model for complex reasoning and long-context tasks."
+      "description": "High-capacity model for complex reasoning and long-context tasks. Advanced download."
     },
     {
       "id": "llama-3.3-70b-instruct-q3-k-m",
@@ -45,6 +109,8 @@
       "parameters": "70B",
       "license": "Meta Llama 3.3 Community License",
       "gated": true,
+      "section": "advanced",
+      "starter_recommended": false,
       "tasks": ["general", "coding", "long-context"],
       "download_url": "https://huggingface.co/bartowski/Llama-3.3-70B-Instruct-GGUF/resolve/main/Llama-3.3-70B-Instruct-Q3_K_M.gguf",
       "host_url": "https://huggingface.co/bartowski/Llama-3.3-70B-Instruct-GGUF",
@@ -54,7 +120,7 @@
       "min_ram_gb": 64,
       "min_vram_gb": 24,
       "requires_gpu": true,
-      "description": "Large gated model requiring license acceptance on the host."
+      "description": "Huge model. Requires account/login and may be split into multiple files. Advanced users only."
     }
   ]
 }
